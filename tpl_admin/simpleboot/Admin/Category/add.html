@@ -1,0 +1,50 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+	<div class="wrap J_check_wrap">
+		<ul class="nav nav-tabs">
+	        <li class="active"><a href="#A" data-toggle="tab">基本属性</a></li>
+	    </ul>
+		<form class="form-horizontal J_ajaxForm" name="myform" id="myform" action="{:U('Category/add_post')}" method="post">
+			<div class="tabbable">
+		        <div class="tab-content">
+		          <div class="tab-pane active" id="A">
+		          		<table cellpadding="2" cellspacing="2" width="100%">
+							<tbody>
+								<tr>
+									<td width="140">上级:</td>
+									<td><select name="parent_id" class="normal_select">
+											<option value="0">顶级分类</option>
+											<foreach name="terms" item="vo">
+												<php>$selected=$parent==$vo['cat_id']?"selected":""</php>
+									        	<option value="{$vo.cat_id}" {$selected}>{$vo.spacer}{$vo.cat_name}</option>
+											</foreach>
+									</select></td>
+								</tr>
+								<tr>
+									<td>名称:</td>
+									<td><input type="text" class="input" name="cat_name" value=""><span class="must_red">*</span></td>
+								</tr>
+								<tr>
+									<td>描述:</td>
+									<td><textarea name="cat_desc" rows="5" cols="57"></textarea></td>
+								</tr>
+								<tr>
+									<td>排序:</td>
+									<td><input type="text" name="sort_order"/></td>
+								</tr>
+							</tbody>
+						</table>
+		          </div>
+		          
+		          
+		        </div>
+		    </div>
+		     <div class="form-actions">
+		           <button class="btn btn-primary btn_submit J_ajax_submit_btn"type="submit">提交</button>
+		      		<a class="btn" href="{:U('Category/index')}">返回</a>
+		      </div>
+		</form>
+	</div>
+	<script type="text/javascript" src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

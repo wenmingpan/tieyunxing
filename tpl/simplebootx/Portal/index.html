@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>六媒体科技</title>
+<link href="/statics/new/css/global.css" type="text/css" rel="stylesheet"/>
+<link href="/statics/new/css/index.css" type="text/css" rel="stylesheet"/>
+<script src="/statics/new/js/about.js" type="text/javascript"></script>
+<script src="/statics/new/js/jquery-1.8.1.min.js" type="text/javascript"></script>
+<script src="/statics/new/js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script>
+$(document).ready(function() {
+$('#menu-item-1 > a').addClass("active");
+}); 
+</script>
+</head>
+
+<body>
+
+<!--header begin-->
+    <header>
+<tc_include file="Public:head2" />
+                
+                      <nav>
+<tc_include file="Public:nav2" />
+                            <div class="clear"></div>
+                      </nav>
+                </div>
+              </div>
+        </div>
+        <!--Nav End author:zhouyaqin ; datetime:2015-3-14-->
+      </div>
+    </header>
+<!--header End-->
+	
+  <!--Banner Begin author:zhouyaqin ; datetime:2015-3-14-->
+	<div class="banner">
+    	<!-- <img src="images/banner-01.jpg"  height="600" /> -->
+      
+     <!-- <div id="wrapper">
+        <div id="slider-wrapper">
+            <div id="slider" class="nivoSlider">
+                <foreach name="home_slides" item="vo">
+                <a href="{$vo.slide_url}" target="_blank"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" alt="" /></a>
+                </foreach>
+            </div>
+        </div>
+         </div> -->
+        
+       <div id="slide">
+            <ul class='slide-box'>
+                 <foreach name="home_slides" item="vo" key='k'>
+                    <li style="background-image:url({:sp_get_asset_upload_path($vo['slide_pic'])}); <if condition='$k eq 0'>opacity:1;filter:alpha(opacity=100);</if>">
+                        <div>
+                            <a href="{$vo.slide_url}" alt=""></a>
+                        </div>
+                    </li>
+                 </foreach>            
+            </ul>
+            <div class='slide-nav'>
+                <div class='slide-nav-box'>
+                <foreach name="home_slides" item="vo" key='k'>
+                      <a class='<if condition="$k eq 0">active</if>' href="javascript:void(0);"> </a>
+                      </foreach>
+                </div>
+            </div>
+        </div> 
+
+
+    </div>
+ <!--Banner End author:zhouyaqin ; datetime:2015-3-14-->
+
+ <!--Main Content Begin author:zhouyaqin ; datetime:2015-3-14-->
+	<div class="maincontent mg-top40 mg">
+
+         <!--UNIVERSAL Product Begin author:zhouyaqin ; datetime:2015-3-14-->
+            <div class="cases mg-bot20">
+            	<div class="case-title mg-bot30"><strong>热门产品</strong><span class="font18">HOT PRODUCTS</span></div>
+                <div class="case-cont fl mg-bot40">
+                    	<div class="case-img"><a href="http://www.liumei.org/index.php?g=&m=product&a=index&id=5"><img src="/statics/new/images/imgs-01.jpg" alt="PHP标准版" width="380" height="235"/></a></div>
+                        <p class="case-tl">PHP标准版 </p>
+                        <p class="case-tl-cont">产品优势：代码开源度大，自动开发性强；功能模块清晰，系统可配置性强</p>
+                </div>
+                <div class="case-cont fl mg30  mg-bot40">
+                    <div class="case-img"><a href="http://www.liumei.org/index.php?g=&m=product&a=index&id=16"><img src="/statics/new/images/imgs-02.jpg" alt="众筹标准版" width="380" height="235"/></a></div>
+                    <p class="case-tl">众筹标准版</p>
+                    <p class="case-tl-cont">产品优势：开放的融资平台；华丽的营销手段低成本的支出</p>
+                </div>
+                
+                 <div class="case-cont fl mg30  mg-bot40">
+                    <div class="case-img"><a href="http://www.liumei.org/index.php?g=&m=product&a=index&id=12"><img src="/statics/new/images/imgs-08.jpg" alt="P2P股票配资版" width="380" height="235"/></a></div>
+                    <p class="case-tl">P2P股票配资版</p>
+                    <p class="case-tl-cont">产品优势：股票配资，合理申请配资金额；借款人可以通过设置，自动付息；第三方股票软件对接，还款中体现股票近况</p>
+                </div>
+                <div class="case-cont fl mg-bot40">
+                        <div class="case-img"><a href="http://www.liumei.org/index.php?g=&m=product&a=index&id=8"><img src="/statics/new/images/imgs-06.jpg" alt="JAVA易宝托管版" width="380" height="235"/></a></div>
+                        <p class="case-tl">JAVA易宝托管版</p>
+                        <p class="case-tl-cont">产品优势：系统合规、专业，安全、稳定，易部署；多重检测 让产品安全稳固</p>
+                </div>
+                <div class="case-cont fl mg30  mg-bot40">
+                    <div class="case-img"><a href="http://www.liumei.org/index.php?g=&m=product&a=index&id=14"><img src="/statics/new/images/imgs-07.jpg" alt="P2P高级定制版" width="380" height="235"/></a></div>
+                    <p class="case-tl">P2P高级定制版</p>
+                    <p class="case-tl-cont">产品优势：量身定制平台前台界面风格；全天的运维服务，解决客户运营后顾之忧</p>
+                </div>
+                
+                 <div class="case-cont fl mg30  mg-bot40">
+                    <div class="case-img"><a href="http://www.liumei.org/index.php?g=&m=product&a=index&id=15"><img src="/statics/new/images/imgs-03.jpg" alt="APP标准版" width="380" height="235"/></a></div>
+                    <p class="case-tl">APP标准版</p>
+                    <p class="case-tl-cont">产品优势：后台管理模块安全部署"端+云" 结构，全面覆盖移动端</p>
+                </div>
+                
+            </div>
+       <!--UNIVERSAL Product End author:zhouyaqin ; datetime:2015-3-14-->
+        
+       <!--CUSTOMIZATION Product Begin author:zhouyaqin ; datetime:2015-3-14-->
+            <div class="cases mg-bot60">
+                <div class="case-title mg-bot60"><strong>开发流程</strong><span class="font18">DEVELOPMENT PROCESS</span></div>
+                <div class="mg-top30 text-center">
+                    <img src="/statics/new/images/liucheng.png" />
+                </div>
+            </div>
+        <!--CUSTOMIZATION Product End author:zhouyaqin ; datetime:2015-3-14-->
+        
+        
+    <!-- 服务列表、最新公告:begin author:zhouyaqin ; datetime:2015-3-20; tel:18818565012-->
+    <div class="service-notice mg-bot30">
+        <div class="wrap cf">
+            <ul class="service-list cf">
+                <li class="item1">
+                    <span class="name">行业咨询</span>
+                    <span class="intro">专业视角解读行业发展现状及未来发展趋势。</span>
+                </li>
+                <li class="item2">
+                    <span class="name">软件开发</span>
+                    <span class="intro">丰富行业经验的技术开发团队为您量身打造。</span>
+                </li>
+                <li class="item3">
+                    <span class="name">运维服务</span>
+                    <span class="intro">7*24小时服务，解决您技术上的后顾之忧。</span>
+                </li>
+                <li class="item4">
+                    <span class="name">人员培训</span>
+                    <span class="intro">强化员工技能，提升运营效率。</span>
+                </li>
+                <li class="item5">
+                    <span class="name">营销策划</span>
+                    <span class="intro">根据市场环境，提供专业营销策划方案。</span>
+                </li>
+                <li class="item6">
+                    <span class="name">品牌包装</span>
+                    <span class="intro">提供产品包装方案，提升品牌影响力。</span>
+                </li>
+            </ul>
+        </div>
+        <div class="clears"></div>
+    </div>
+    <!-- 服务列表、最新公告:end author:zhouyaqin ; datetime:2015-3-20; tel:18818565012-->
+
+
+
+	</div>
+    <!--Main Content End author:zhouyaqin ; datetime:2015-3-14-->
+	<div class="clears"></div>
+
+    <!--Footer Begin author:zhouyaqin ; datetime:2015-3-14-->
+	<tc_include file="Public:footer2" />
+ <!--Footer End author:zhouyaqin ; datetime:2015-3-14-->
+    
+    <script type="text/javascript">
+
+    // banner begin
+            $(function(){ 
+                var aSlidePage = $('#slide .slide-nav-box a');
+                var aSlideCon = $('#slide .slide-box li');
+                var iSize = aSlideCon.size();
+                var iNow = 0;
+                var timer = null;
+                var abox = $("#slide .slide-nav .slide-nav-box"); // a_nav外框
+                var anum = $("#slide .slide-nav .slide-nav-box a"); // a_nav
+                var awidth = $("#slide .slide-nav .slide-nav-box a").width()+10; // a_nav宽度+margin的值+line-block的值
+                var anumwidth = 0;
+                aSlidePage.each(function(index){
+                    $(this).mouseover(function(){
+                        iNow = index;
+                        slideRun()
+                    })
+                })
+                function slideRun(){
+                    aSlidePage.removeClass('active');
+                    aSlidePage.eq(iNow).addClass('active');
+                    aSlideCon.stop();
+                    aSlideCon.eq(iNow).siblings().animate({
+                        opacity:0
+                    },600);
+                    aSlideCon.eq(iNow).animate({
+                        opacity:1
+                    },600);
+                }
+                autoRun();
+                function autoRun(){
+                    timer = setInterval(function(){
+                        iNow++;
+                        if(iNow>iSize-1) iNow=0;
+                        slideRun();
+                    },5000)
+                };
+                $('#slide').hover(function(){
+                    clearInterval(timer);
+                },function(){
+                    autoRun();
+                });
+// 遍历a_nav标签计算获取a_nav外框宽度并赋值
+                anum.each(function(index){
+                    anumwidth = (anum.size())*awidth;
+                });
+                abox.css("width",anumwidth + "px");
+            })
+
+// banner end
+
+
+  </script>
+
+</body>
+</html>

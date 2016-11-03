@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,dl,dd,img,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,h7,p{margin:0;padding:0;border:0; font-family:"微软雅黑";}
+ul,ol,li{ list-style-type:none;}
+a img{ border:none}
+a{ text-decoration:none; outline: none;}
+iframe{border:none;}
+input{ border:none;}
+
+/* function */
+.fl{float:left;_display:inline; display:inline;}
+.fr{float:right;_display:inline; display:inline;}
+.h{display:none;visibility:visible;}
+.clear{clear:both;font-size:0;line-height:0;height:0;visibility:visible;}
+.clears{ clear:left;}
+.clearfix{*zoom:1;}
+.clearfix:after{display:block;clear:both;content:".";visibility:hidden;height:0;}
+.right{text-align:right;}
+.left{text-align:left;}
+.b{font-weight:bold;}
+.line-through{text-decoration:line-through;}
+.under{text-decoration:underline;}
+.nones{ text-decoration:none;}
+.break{word-break:break-all;}
+.red{color:#af0102;}
+.gray{color:#CCC;}
+a.gray{color:#CCC;}
+a.gray:visited{color:#CCC;}
+
+a:link {color:#333;text-decoration:none;}
+a:visited {color:#333;}
+a:hover{color:#51aded;text-decoration: none;}
+a:active {color:#51aded;text-decoration:none;}
+
+
+/*颜色*/
+.t-eight{color: #888;}
+
+
+/*行高*/
+.lh2{line-height: 2em}
+
+/*全局css*/
+.mg{margin:0 auto;}
+.pad{padding:10px;}
+.pad5{padding-left:5px;}
+.pad20{padding-left:20px;}
+.pad30{padding-left:30px;}
+.pad-top20{padding-top:20px;}
+.pad-top30{padding-top:30px;}
+.pad-top40{padding-top:40px;}
+.pad-top60{padding-top:60px;}
+.pad-bot10{padding-bottom:10px;}
+.pad-bot20{padding-bottom:20px;}
+.pad-bot30{padding-bottom:30px;}
+.mg10{margin-left:10px;}
+.mg20{margin-left:20px;}
+.mg30{margin-left:30px;}
+.mg40{margin-left:40px;}
+.mg45{margin-left:45px;}
+.mg-left10{margin-left:10px;}
+.mg-left15{margin-left:15px;}
+.mg-left20{margin-left:20px;}
+.mg-left30{margin-left:30px;}
+.mg-right10{margin-right:10px;}
+.mg-right15{margin-right:15px;}
+.mg-right20{margin-right:20px;}
+.mg-right30{margin-right:30px;}
+.mg-top20{margin-top:20px;}
+.mg-top30{margin-top:30px;}
+.mg-top40{margin-top:50px;}
+.mg-top60{margin-top:60px;}
+.mg-bot10{margin-bottom:10px;}
+.mg-bot20{margin-bottom:20px;}
+.mg-bot30{margin-bottom:30px;}
+.mg-bot40{margin-bottom:40px;}
+.mg-bot60{margin-bottom:60px;}
+.mg-bot80{margin-bottom:80px;}
+.pad40{padding-left:40px;}
+.text-center{ text-align:center;}
+.text-right{ text-align:right;}
+.text-left{ text-align:left;}
+
+/*字体大小css*/
+.font12{font-size:12px;}
+.font14{font-size:14px;}
+.font16{font-size:16px;}
+.font18{font-size:18px;}
+.font21{font-size:21px;}
+
+
