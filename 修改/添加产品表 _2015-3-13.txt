@@ -26,3 +26,53 @@ CREATE TABLE `sp_product` (
   `add_time` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+// 产品表新增字段 2016-11-4
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : localhost
+Source Server Version : 50505
+Source Host           : localhost:3306
+Source Database       : tieyunxing
+
+Target Server Type    : MYSQL
+Target Server Version : 50505
+File Encoding         : 65001
+
+Date: 2016-11-04 17:07:24
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for sp_product
+-- ----------------------------
+DROP TABLE IF EXISTS `sp_product`;
+CREATE TABLE `sp_product` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `cat_id` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `product_name` varchar(120) NOT NULL DEFAULT '',
+  `keywords` varchar(255) NOT NULL DEFAULT '',
+  `product_function` text NOT NULL,
+  `product_feature` text NOT NULL,
+  `product_thumb` varchar(255) NOT NULL DEFAULT '',
+  `font_function` text NOT NULL,
+  `admin_function` text NOT NULL,
+  `user_function` text NOT NULL,
+  `add_time` int(10) unsigned NOT NULL DEFAULT '0',
+  `money` varchar(255) NOT NULL DEFAULT '' COMMENT '价格',
+  `name` varchar(255) NOT NULL DEFAULT '' COMMENT '品名',
+  `material` varchar(255) NOT NULL DEFAULT '' COMMENT '材质',
+  `type` varchar(255) NOT NULL DEFAULT '' COMMENT '类型',
+  `form` varchar(255) NOT NULL DEFAULT '' COMMENT '形式',
+  `style` varchar(255) NOT NULL DEFAULT '' COMMENT '风格',
+  `area` varchar(255) NOT NULL DEFAULT '' COMMENT '使用场所',
+  `scene` varchar(255) NOT NULL DEFAULT '' COMMENT '使用场景',
+  `brand` varchar(255) NOT NULL DEFAULT '' COMMENT '品牌',
+  `material_type` varchar(255) NOT NULL DEFAULT '' COMMENT '材质类型',
+  `made_method` varchar(255) NOT NULL DEFAULT '' COMMENT '制作方法',
+  `put_way` varchar(255) NOT NULL DEFAULT '' COMMENT '摆挂形式',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
